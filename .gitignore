@@ -1,0 +1,53 @@
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/storage/debugbar
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+/storage/logs
+*.log
+
+# Cache & compiled files
+/bootstrap/cache
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/views
+
+# IDE & OS files
+/.idea
+/.vscode
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# PHPUnit
+.phpunit.result.cache
+
+# Composer
+/composer.lock
+
+# NPM / Yarn
+npm-debug.log*
+yarn-error.log*
+
+# Mix
+/public/mix-manifest.json
+
+# Homestead / Sail
+Homestead.yaml
+Homestead.json
+/.vagrant
+
+# Laravel specific
+/.phpunit.cache
+.phpstorm.meta.php
+
+# Build
+/public/build

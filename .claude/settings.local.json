@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer create-project:*)",
+      "Bash(xcopy:*)",
+      "Bash(rd /s /q realestate_temp)",
+      "Bash(composer require:*)",
+      "Bash(php artisan:*)",
+      "Bash(php C:\\\\erdmann\\\\app\\\\realestate_app\\\\artisan make:migration:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}
