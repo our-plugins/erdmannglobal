@@ -82,12 +82,7 @@ class BlogPostController extends Controller
     public function edit(BlogPost $blog)
     {
         $categories = BlogCategory::all();
-<<<<<<< HEAD
         return view('admin.blog.edit', compact('blog', 'categories'));
-=======
-        $post = $blog;
-        return view('admin.blog.edit', compact('post', 'categories'));
->>>>>>> master
     }
 
     public function update(Request $request, BlogPost $blog)
