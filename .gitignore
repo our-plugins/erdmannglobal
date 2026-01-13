@@ -51,3 +51,7 @@ Homestead.json
 
 # Build
 /public/build
+<<<<<<< HEAD
+=======
+/public/images
+>>>>>>> master

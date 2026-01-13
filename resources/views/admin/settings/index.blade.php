@@ -1,12 +1,42 @@
 <x-admin-layout>
     <x-slot name="title">Site Settings</x-slot>
 
+<<<<<<< HEAD
+=======
+    @php
+        // Ensure settings is always an array to prevent foreach errors
+        $settings = $settings ?? [];
+        if (!is_array($settings)) {
+            $settings = [];
+        }
+    @endphp
+
+>>>>>>> master
     <div class="max-w-4xl">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900">Site Settings</h2>
             <p class="text-gray-600">Configure your website settings</p>
         </div>
 
+<<<<<<< HEAD
+=======
+        @if(session('success'))
+            <div class="mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        @if($errors->any())
+            <div class="mb-6 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                <ul class="list-disc list-inside">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+>>>>>>> master
         <form action="{{ route('admin.settings.update') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
             @csrf
 
