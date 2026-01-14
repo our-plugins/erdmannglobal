@@ -39,11 +39,7 @@
     <!-- Schema.org -->
     @stack('schema')
 </head>
-<<<<<<< HEAD
 <body class="font-sans antialiased bg-dark" x-data="{ mobileMenuOpen: false }">
-=======
-<body class="font-sans antialiased bg-page text-text-primary" x-data="{ mobileMenuOpen: false }">
->>>>>>> master
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
         @include('partials.header')
