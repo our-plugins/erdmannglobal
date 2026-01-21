@@ -50,5 +50,5 @@ Homestead.json
 .phpstorm.meta.php
 
 # Build
-/public/build
+# /public/build
 /public/images
